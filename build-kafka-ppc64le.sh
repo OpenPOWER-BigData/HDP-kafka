@@ -15,15 +15,5 @@
 # limitations under the License.
 set -ex
 
-BUILD_OPTS="-Divy.home=${HOME}/.ivy2 -Dsbt.ivy.home=${HOME}/.ivy2 -Duser.home=${HOME} \
-            -Drepo.maven.org=$IVY_MIRROR_PROP \
-            -Dreactor.repo=file://${HOME}/.m2/repository \
-            -DskipTests -DrecompileMode=all"
-
 export MAVEN_OPTS="-Xmx2g -XX:ReservedCodeCacheSize=512m -XX:PermSize=1024m -XX:MaxPermSize=1024m"
-./gradlew -PscalaVersion=${SCALA_VERSION} clean releaseTarGz -x signArchives
-
-#m -rf build
-#kdir build
-
-#p core/build/distributions/kafka_*.tgz build/`basename core/build/distributions/kafka* .tgz`.tar.gz
+./gradlew clean releaseTarGz -x signArchives
