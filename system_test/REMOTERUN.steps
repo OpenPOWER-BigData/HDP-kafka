@@ -1,0 +1,38 @@
+
+1) Create a cluster.json file based on what Ambari has deployed. Below is the example file that you can find under system_test/ : 
+ {
+    "brokers": [
+        "c6501.ambari.apache.org",
+        "c6502.ambari.apache.org",
+        "c6503.ambari.apache.org"
+    ],  
+    "zookeepers": [
+        "c6501.ambari.apache.org"
+    ],  
+    "zkPort": "2181",
+    "producers": [
+        "c6501.ambari.apache.org",
+        "c6502.ambari.apache.org"
+    ],  
+    "consumers": [
+        "c6501.ambari.apache.org"
+    ],  
+    "javaHome": "/usr/jdk64/jdk1.8.0_40",
+    "kafkaHome": "/usr/hdp/current/kafka-broker",
+    "secure": false
+}
+
+
+2) Using this cluster info file (cluster.json), update all test config files in the test suite  as follows:
+ - # system_test/fixtestconfigs.py  cluster.json  system_test/replication_testsuite
+
+3) Run the test suite.
+  Update the test_to_run.json (based on which tests need to be run). Use the other test_to_run*.json sample files as reference.
+
+  - For unsecure:
+  # python -u -B system_test_runner.py 2>&1 | tee system_test_output.log
+
+  - For secure (need to set/export SECURE in environment) :
+  # SECURE="true" python -u -B system_test_runner.py 2>&1 | tee system_test_output.log
+  
+  For more details on running system tests check  https://cwiki.apache.org/confluence/display/KAFKA/Kafka+System+Tests

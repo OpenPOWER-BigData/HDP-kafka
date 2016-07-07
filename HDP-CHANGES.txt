@@ -1,0 +1,18 @@
+Changes only in Hortonworks github and not in Apache Kafka release 0.9.0.1 and hence not covered in releaes notes htp://apache.arvixe.com/kafka/0.9.0.1/RELEASE_NOTES.html
+
+ * KAFKA-2812: improve consumer integration tests
+ * KAFKA-2862: Fix MirrorMaker's message.handler.args description
+ * KAFKA-2872: unite sink nodes with parent nodes in addSink
+ * KAFKA-2879: Make MiniKDC test service slightly more generic
+ * KAFKA-2877: handle request timeout in sync group
+ * KAFKA-2881: Improve Consumer Configs and API Documentation
+ * KAFKA-2803: Add hard bounce system test for Kafka Connect.
+ * KAFKA-2878: Guard against OutOfMemory in Kafka broker
+ * KAFKA-2892: Consumer Docs Use Wrong Method
+ * KAFKA-2882: Add constructor cache for Snappy and LZ4 Output/Input streams in Compressor.java
+ * KAFKA-2899: improve logging when unexpected exceptions thrown in reading local log
+ * KAFKA-2906: Fix Connect javadocs, restrict only to api subproject, and clean up javadoc warnings.
+ * KAFKA-2913: missing partition check when removing groups from cache
+ * KAFKA-2880: consumer should handle disconnect/timeout for metadata requests
+ * KAFKA-2942: inadvertent auto-commit when pre-fetching can cause message loss
+ * KAFKA-2950: Fix performance regression in the producer

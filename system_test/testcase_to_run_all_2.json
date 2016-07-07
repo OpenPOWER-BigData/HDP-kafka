@@ -1,0 +1,45 @@
+{
+    "ReplicaBasicTest"  : [
+
+        "testcase_0131",
+        "testcase_0132",
+        "testcase_0133",
+        "testcase_0134",
+
+        "testcase_0151",
+        "testcase_0152",
+        "testcase_0153",
+        "testcase_0154",
+        "testcase_0155",
+        "testcase_0156",
+        "testcase_0157",
+        "testcase_0158",
+
+        "testcase_0201",
+        "testcase_0202",
+        "testcase_0203",
+        "testcase_0204",
+        "testcase_0205",
+        "testcase_0206",
+        "testcase_0207",
+        "testcase_0208",
+
+        "testcase_0251",
+        "testcase_0252",
+        "testcase_0253",
+        "testcase_0254",
+        "testcase_0255",
+        "testcase_0256",
+        "testcase_0257",
+        "testcase_0258",
+
+        "testcase_0301",
+        "testcase_0302",
+        "testcase_0303",
+        "testcase_0304",
+        "testcase_0305",
+        "testcase_0306",
+        "testcase_0307",
+        "testcase_0308"
+    ]
+}

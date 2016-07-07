@@ -1,0 +1,43 @@
+{
+    "secure": false,
+    "javaHome": "/usr/lib/jvm/java-1.7.0-openjdk.x86_64",
+    "kafkaHome": "/usr/hdp/current/kafka-broker",
+    "zkPort": "2181",
+
+    "consumers": [
+        "ip-172-31-7-14.ec2.internal"
+    ],
+    "consumers_target": [
+        "ip-172-31-7-14.ec2.internal"
+    ],
+
+    "mirrormakers": [
+        "ip-172-31-7-14.ec2.internal",
+        "ip-172-31-7-15.ec2.internal"
+    ],
+
+    "producers": [
+        "ip-172-31-7-14.ec2.internal",
+        "ip-172-31-7-15.ec2.internal"
+    ],
+
+    "brokers": [
+        "ip-172-31-7-14.ec2.internal",
+        "ip-172-31-7-15.ec2.internal",
+        "ip-172-31-7-16.ec2.internal"
+    ],
+    "brokers_target": [
+        "ip-172-31-7-14.ec2.internal",
+        "ip-172-31-7-15.ec2.internal",
+        "ip-172-31-7-16.ec2.internal"
+    ],
+
+    "zookeepers": [
+        "ip-172-31-7-14.ec2.internal",
+        "ip-172-31-7-15.ec2.internal"
+    ],
+    "zookeepers_target": [
+        "ip-172-31-7-15.ec2.internal",
+        "ip-172-31-7-16.ec2.internal"
+    ]
+}
