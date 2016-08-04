@@ -67,7 +67,6 @@ ext {
 
 apply from: file('wrapper.gradle')
 apply from: file('scala.gradle')
-apply from: file('gradle/rat.gradle')
 
 if (new File('.git').exists()) {
   apply from: file('gradle/rat.gradle')
