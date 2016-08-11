@@ -17,3 +17,4 @@ set -ex
 
 export MAVEN_OPTS="-Xmx2g -XX:ReservedCodeCacheSize=512m -XX:PermSize=1024m -XX:MaxPermSize=1024m"
 ./gradlew clean releaseTarGz -x signArchives
+./gradlew build -Dcheckstyle.config.path=`pwd`
